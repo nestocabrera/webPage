@@ -1,7 +1,57 @@
-h1{
-    color:blue;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
 ul {
     list-style: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 0 5%;
+    background: #262626;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+   /* display: flex;
+    justify-content: flex-start;*/
+    font-weight: bold;
+}
+.navFlex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.navFlex nav ul {
+    display: flex;
+  
+}
+.menu-toggle{
+    color: #fff;
+}
+header .navFlex nav ul li a{
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    padding: 0 10px;
+    color:#fff;
+
+}
+header .navFlex nav ul li a:hover,
+header .navFlex nav ul li a.active{
+    color: #fff;
+    background: #2196f3;
 }
