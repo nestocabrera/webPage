@@ -5,7 +5,12 @@ ul {
 body{
     margin: 0;
     padding: 0;
+  
     font-family: sans-serif;
+    background: url(close.jpg);
+    background-attachment: fixed;
+    background-position: center;
+
 
 }
 header{
@@ -71,18 +76,31 @@ header .navFlex nav ul li a.active{
         display: none;
         position: absolute;
         width: 100%;
-       /* height: 100%;*/
+        height: calc(100vh-50px);
         background: #333;
         top: 50px;
-        left: 0;
+        left: -100%;
         display: flex;
+       flex-direction: column;
+       align-items: center;
+       transition: 0.5s;
+    }
+    
+    header .navFlex  nav ul{
+        display: block;
+       text-align: center;
+    }
+    
+    header .navFlex  nav ul li {
+        border-bottom: 1px solid rgba(0,0,0,.2);
+        display: flex;
+        justify-content: stretch;
         flex-direction: column;
         align-items: center;
-       
     }
-    header .navFlex  nav ul{
-        display: flex;
-        flex-direction: column;
-       
+    header .navFlex  nav.active  {
+
+        left:0;
     }
+    
 }
